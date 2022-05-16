@@ -1,0 +1,31 @@
+ <html>
+ <head>
+	  <title>Assignment2</title>
+ </head>
+ <body>
+     <h2> Numbers Divisible by 3 or 5</h2>
+	 <script>
+			 let n = window.prompt("Enter Number :");
+			 let total =0;
+			 
+			 document.write("The number is : " + n);
+			 document.write("<br>");
+			 document.write("The numbers divisible by 3 or 5 are : ");
+			 
+			 for(let i=1; i<=n; i++)
+			 {
+				if((i%3 ==0) || (i%5==0)){
+				 total = total + i;
+				document.write(i + ", ");
+
+				}
+			 }
+			 document.write("<br>");
+			 document.write("The sum of numbers are : " + total);
+	 </script>
+	 
+ </body>
+ </html>
+	 
+	
+
