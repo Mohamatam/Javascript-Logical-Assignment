@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Assignment18</title>
+</head>
+<body>
+    <div class="myDiv">
+        <h1>Translate English to Pig Latin</h1>
+        <textfield>English: </textfield>
+        <input id="inputtext" value=""><br>
+        <button id="translate" onclick="myFunction()">Translate</button><br>
+        <textfield id="output"></textfield>
+    </div>
+    <script>
+function myFunction()
+{    
+var textt=document.getElementById("inputtext").value;    
+var wordintext=textt.split(" ");   
+ var o="";   
+ for(i=0;i<wordintext.length;i++){       
+ o=o+wordintext[i].slice(1,)+wordintext[i][0]+"ay ";   
+ }    
+ document.getElementById("output").innerHTML="<b>Pig Latin : </b>"+o;}
+</script>
+</body>
+</html>
