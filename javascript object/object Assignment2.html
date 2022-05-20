@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Object Assignment3</title>
+	</head>
+
+<body>
+	<script>
+	var Rectangle = function(width,height) 
+{
+this.width = width;
+this.height = height;
+this.area = function()
+{
+document.write("Area of the Rectangle is: " +width * height);
+}
+}
+var Rect1 = new Rectangle(2,4);
+var Rect2 = new Rectangle(8,2);
+var Rect3 = new Rectangle(2,6);
+var Rect4 = new Rectangle(5,4);
+doumnet.write("width"+myRect1.width);
+document.write("height"+myRect1.height);
+myRect1.area();
+document.write("\n");
+document.writr("width"+myRect2.width);
+document.write("height"+myRect2.height);
+myRect2.area();
+document.write("\n");
+document.write("width"+myRect3.width);
+document.write("height"+myRect3.height);
+myRect3.area();
+document.write("\n");
+document.write("width"+myRect4.width);
+document.write("height"+myRect4.height);
+myRect4.area();
+document.write("\n");
+// Assignment 2----------------------------
+Rectangle.prototype.getArea = function()
+document.write("Getting Area using prototype property : " +width * height);
+}
+document.write(Rectangle.prototype);
+Rect1.getArea();
+Rect2.getArea();
+Rect3.getArea();
+Rect4.getArea();
+
+// Assignment 3-----------
+
+Rectangle.prototype.getAreaForRect = function(width,height) 
+{
+document.write("Getting Area using prototype property : " +this.width * this.height);
+}
+document.write(Rectangle.prototype);
+Rect1.getAreaForRect(2,3);
+Rect2.getAreaForRect(8,6);
+Rect3.getAreaForRect(5,3);
+Rect4.getAreaForRect(1,6);
+		</script>
+</body>
+</html>
